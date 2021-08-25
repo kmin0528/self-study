@@ -119,7 +119,6 @@ const check_2 = document.querySelector("#login2");
 const check_password = check_2.querySelector("input");
 const loginBtn = document.querySelector(".loginbutton");
 
-
 function CheckValue(){ //하나의 함수로 묶음
     const ID = check_id.value; // ID에 입력칸 값 저장
     const PASSWORD = check_password.value; // PW에 입력한 값 저장
@@ -137,4 +136,136 @@ function init(){
 
 init();
 
-//결과 오류검출==> login.js  마지막  [form.addEventListener("click",handlesubmitId);] 오류 
+// 결과 회원가입 O 로그인 O
+
+
+
+
+
+<h2>자바스크립트의 다양한 식 나타내기</h2>
+
+
+
+    <p>inch * 2.54</p> // 연산식은 식입니다.
+    <p>"안녕하세요?"; // 문자열도 식입니다.
+    <p>5</p> // 숫자도 식입니다.
+
+
+
+
+
+<h2>알림 창 만들기</h2>
+
+
+
+<p>alert("안녕하세요?")</p>
+
+
+
+
+
+<h3>확인 창 만들기</h3>
+
+
+
+<p> var reply = confirm("정말 배경 이미지를 바꾸시겠습니까?");
+
+
+
+
+
+<h4>프롬포트 창의 기본값 지정하기</h4>
+
+
+
+<p>var name = prompt("이름을 입력하세요."아무개");</p>
+
+
+
+
+
+<h4>이름 받아서 화면에 표시하기</h4>
+
+
+
+ <script>
+     var name = prompt("이름을 입력하세요.");
+     document.write("<b><big>"+"name"+"</big></b>님, 환영합니다.");
+ </script>
+
+
+
+<h3>배열 나열하기</h3>
+
+<p>var spring = "봄";</p>
+<p>var summer = "여름";</p>
+<p>var fall = "가을";</p>
+<p>var winter = "겨울"</p>
+
+
+
+<p>var season = ["봄","여름","가을","겨울"];</p>
+
+
+
+
+
+<h2>블록 변수 선언하기</h2>
+
+
+
+function calcSum(n) {
+
+​	let sum = 0;
+
+​	for(let i = 1; i < n + 1; i++ ){
+
+​	sum += i;
+
+​	}
+
+​	console.log(sum);
+
+}
+
+
+
+<h2>매개변수를 사용한 함수 선언하고 호출하기</h2>
+
+function addNumber(num1,num2) {
+
+​	var sum =  num1+num2; 
+
+​	return sum;
+
+}
+
+var result = addNumber(2,3);
+
+document.write("두 수를 더한 값: "+ result);
+
+
+
+<h3>버튼을 클릭하면 배경 색 바꾸기</h3>
+
+<body>
+
+	<ul>
+	    <li><a href="#"onclick = " changeBg('green')">Green</a></li>
+	    <li><a href="#"onclick = " changeBg('orange')">Green</a></li>
+	    <li><a href="#"onclick = "changeBg('purple')"</li>
+	</ul>
+	<div id = 'result'></div>
+	
+	<script>
+	fucntion changrBg(color) {
+		var result = document.querySelector('#result');
+		result.style.backgroundColor = color;
+	}
+	</script>
+	</body>
+
+
+
+
+
