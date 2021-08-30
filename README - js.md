@@ -46,7 +46,8 @@
 
 </body>
 </html>
----------------- javascript -----------------------------
+---------------- js-login.js -----------------------------
+
 <p>const input = document.querySelector ("#first");  //id의 input 영역 </p>
 <p>const input_One = input.querySelector("input");</p>
 <p>const password1 = document.querySelector("#second");</p>
@@ -112,7 +113,8 @@ init();
     <script src ="js-login.js"></script>
 </body>
 </html>
----------------------javascript----------------------------
+--------------------- js-join.js ----------------------------
+
 <p>const check_1 = document.querySelector("#login1");  //querySelector로부터 로그인 입력칸 & 로그인 버튼을 가져옴</p>
 <p>const check_id = check_1.querySelector("input");</p>
 <p>const check_2 = document.querySelector("#login2");</p>
