@@ -113,25 +113,25 @@ init();
 </body>
 </html>
 ---------------------javascript----------------------------
-const check_1 = document.querySelector("#login1");  //querySelector로부터 로그인 입력칸 & 로그인 버튼을 가져옴
-const check_id = check_1.querySelector("input");
-const check_2 = document.querySelector("#login2");
-const check_password = check_2.querySelector("input");
-const loginBtn = document.querySelector(".loginbutton");
+<p>const check_1 = document.querySelector("#login1");  //querySelector로부터 로그인 입력칸 & 로그인 버튼을 가져옴</p>
+<p>const check_id = check_1.querySelector("input");</p>
+<p>const check_2 = document.querySelector("#login2");</p>
+<p>const check_password = check_2.querySelector("input");</p>
+<p>const loginBtn = document.querySelector(".loginbutton");</p>
 
-function CheckValue(){ //하나의 함수로 묶음
-    const ID = check_id.value; // ID에 입력칸 값 저장
-    const PASSWORD = check_password.value; // PW에 입력한 값 저장
-    if(localStorage.getItem(ID) == PASSWORD) {
-        alert("로그인 되었습니다.");            //회원가입한 아이디와 비밀번호가 입력되었으면 출력
-    }else{
-        alert("등록되지 않거나 아이디,비밀번호 오류입니다!"); //회원가입한 아이디나 비밀번호가 둘중하나라도 오류이면 출력
-    }
-}
+<p>function CheckValue(){ //하나의 함수로 묶음</p>
+    <p>const ID = check_id.value; // ID에 입력칸 값 저장</p>
+   <p>const PASSWORD = check_password.value; // PW에 입력한 값 저장</p>
+    <p>if(localStorage.getItem(ID) == PASSWORD) {</p>
+        <p>alert("로그인 되었습니다.");            //회원가입한 아이디와 비밀번호가 입력되었으면 출력</p>
+   <p> }else{</p>
+        <p>alert("등록되지 않거나 아이디,비밀번호 오류입니다!"); //회원가입한 아이디나 비밀번호가 둘중하나라도 오류이면 출력</p>
+   <p> }</p>
+<p>}</p>
 
-function init(){
-    loginBtn.addEventListener("click",CheckValue);
-}
+<p>function init(){</p>
+    <p>loginBtn.addEventListener("click",CheckValue);</p>
+<p>}
 
 
 init();
