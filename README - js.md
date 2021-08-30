@@ -47,24 +47,24 @@
 </body>
 </html>
 ---------------- javascript -----------------------------
-const input = document.querySelector ("#first");  //id의 input 영역 
-const input_One = input.querySelector("input");
-const password1 = document.querySelector("#second");
-const password_One = password1.querySelector("input"); //password의 input 영역
-const form = document.querySelector(".inbutton");  // 버튼 영역
-console.log(input_One);
+<p>const input = document.querySelector ("#first");</p>  //id의 input 영역 
+<p>const input_One = input.querySelector("input");</p>
+<p>const password1 = document.querySelector("#second");</p>
+<p>const password_One = password1.querySelector("input");</p> //password의 input 영역
+<p>const form = document.querySelector(".inbutton"); </p> // 버튼 영역
+<p>console.log(input_One);</p>
 
-function handlesubmitId(event){  //함수로 묶음 
-    console.log("Start-HandleSubmitId");
-    let currentId = input_One.value;  // currentdld, currentPassword 라는 변수에 각각 input_One(id의 입력값), 
-    let currentPassword = password_One.value; // Password_One(pw의 입력값)의 입력값을 넣음
-    localStorage.setItem(currentId,currentPassword);
+<p>function handlesubmitId(event){</p>  //함수로 묶음 
+    <p>console.log("Start-HandleSubmitId");</p>
+    <p>let currentId = input_One.value;  //</p> currentdld, currentPassword 라는 변수에 각각 input_One(id의 입력값), 
+   <p> let currentPassword = password_One.value; </p>// Password_One(pw의 입력값)의 입력값을 넣음
+   <p> localStorage.setItem(currentId,currentPassword);</p>
 }
 
 
-function init(){ //버튼이 눌릴때 함수 작동하기
-    form.addEventListener("click",handlesubmitId);
-    console.log("1");
+<p>function init(){ //버튼이 눌릴때 함수 작동하기
+    <p>form.addEventListener("click",handlesubmitId);
+    <p>console.log("1");</p>
 }
 
 init();
