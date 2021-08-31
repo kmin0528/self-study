@@ -276,8 +276,8 @@ Document Object Model의 약자, 문서객체모델,
 비슷하게 여기서는 문서 객체를 '인식하는 방식'이라고 해석할 수 있다.
 
 <h3>다양한 방법으로 DOM 요소에 접근하기</h3>
-	document.getElementById("heading")  //id값이 heading인 요소에 접근
-	document.getElementByClassName("클래스 명") // class 선택자 이름이 들어있는 DOM요소에 접근
+	<p>document.getElementById("heading")  //id값이 heading인 요소에 접근</p>
+	<p>document.getElementByClassName("클래스 명") // class 선택자 이름이 들어있는 DOM요소에 접근</p>
 	
 	querySelector("#heading") //id="heading"인 요소
 	querySelector(".bright") //class = "bright"인 요소
