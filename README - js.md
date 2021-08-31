@@ -266,8 +266,23 @@ document.write("두 수를 더한 값: "+ result);
 	}
 	</script>
 	</body>
+	
+<h3>도대체 DOM이란 무엇인가?</h3>
 
+Document Object Model의 약자, 문서객체모델,
+문서 객체란 <html>이나 <body> 같은 html문서의 태그들을 JavaScript가 이용할 수 있는 객체(object)로 만들면 그것을 문서 객체라고 한다. 
+(그럼 html문서의 태그들이 객체에 담긴 상태를 의미하는 것일까?) 
+여기에 Model을 붙였는데 Model이라는 영어 단어에는 모형, 주형이라는 의미도 있고 모듈이라는 의미도 있다고 한다. 
+비슷하게 여기서는 문서 객체를 '인식하는 방식'이라고 해석할 수 있다.
 
+<h3>다양한 방법으로 DOM 요소에 접근하기</h3>
+	document.getElementById("heading")  //id값이 heading인 요소에 접근
+	document.getElementByClassName("클래스 명") // class 선택자 이름이 들어있는 DOM요소에 접근
+	
+	querySelector("#heading") //id="heading"인 요소
+	querySelector(".bright") //class = "bright"인 요소
+	
+	
 
 
 
